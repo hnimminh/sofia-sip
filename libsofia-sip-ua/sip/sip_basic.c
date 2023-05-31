@@ -2849,7 +2849,7 @@ static msg_update_f sip_identity_update;
 
 msg_hclass_t sip_identity_class[] =
 //MINH SIP_HEADER_CLASS(identity, "Identity", "", id_common, non_compact_append, identity);
-SIP_HEADER_CLASS(identity, "Identity", "", id_common, append, identity);
+SIP_HEADER_CLASS(identity, "Identity", "", id_common, prepend, identity);
 issize_t sip_identity_d(su_home_t *home, sip_header_t *h, char *s, isize_t slen)
 {
   sip_identity_t *id = (sip_identity_t *)h;
