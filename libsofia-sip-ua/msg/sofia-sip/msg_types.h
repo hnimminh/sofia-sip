@@ -254,10 +254,10 @@ typedef enum {
 				 * new header is combined with old one. */
   msg_kind_apndlist,		/**< A complex list header. */
   msg_kind_prepend,		/**< New header is prepended */
-  msg_kind_non_compact_append /**< Non-compact New header is appended */
+  //MINH msg_kind_non_compact_append /**< Non-compact New header is appended */
 } msg_header_kind_t;
 
-#define MSG_KIND_IS_COMPACT(f) (f != msg_kind_non_compact_append)
+//MINH #define MSG_KIND_IS_COMPACT(f) (f != msg_kind_non_compact_append)
 
 struct su_home_s;
 
