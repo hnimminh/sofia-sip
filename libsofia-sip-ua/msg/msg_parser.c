@@ -2369,6 +2369,7 @@ int msg_header_add(msg_t *msg,
     old = (*hh);
     break;
   case msg_kind_append:
+  case msg_kind_non_compact_append:
   case msg_kind_apndlist:
     while (*hh)
       hh = &(*hh)->sh_next;
